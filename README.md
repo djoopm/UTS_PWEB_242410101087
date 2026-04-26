@@ -13,8 +13,8 @@
 <img src="assets/profile_mobile.png" alt="Profil">
 
 <h2>Pengelolaan</h2>
-<img src="asset/pengelolaan_desktop.png" alt="Pengelolaan">
-<img src="asset/pengelolaan_mobile.png" alt="Pengelolaan">
+<img src="assets/pengelolaan_desktop.png" alt="Pengelolaan">
+<img src="assets/pengelolaan_mobile.png" alt="Pengelolaan">
 
 ### Deskripsi :
 <p style="text-align: justify;" >
