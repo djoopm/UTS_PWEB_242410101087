@@ -6,19 +6,33 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    
     public function showLogin()
     {
         return view('login');
     }
 
+    // Proses login dengan validasi
     public function login(Request $request)
     {
+        $request->validate([
+            'username' => 'required|min:3|max:30',
+        ], [
+            'username.required' => 'Username wajib diisi!',
+            'username.min'      => 'Username minimal 3 karakter.',
+            'username.max'      => 'Username maksimal 30 karakter.',
+        ]);
+
         $username = $request->input('username');
-        session()->put('username', $username);
-        return redirect('/dashboard');
+        return redirect('/dashboard?username=' . urlencode($username));
     }
 
-    // buku
+    // Logout
+    public function logout()
+    {
+        return redirect('/');
+    }
+
     private function getBooks()
     {
         return [
@@ -37,9 +51,9 @@ class PageController extends Controller
         ];
     }
 
-    public function showDashboard()
+    public function showDashboard(Request $request)
     {
-        $username = session('username', 'Pengunjung');
+        $username = $request->query('username', 'Pengunjung');
         $books    = $this->getBooks();
 
         $stats = [
@@ -53,23 +67,19 @@ class PageController extends Controller
         return view('dashboard', compact('username', 'stats'));
     }
 
-    public function showPengelolaan()
+
+    public function showPengelolaan(Request $request)
     {
-        $username = session('username', 'Pengunjung');
+        $username = $request->query('username', 'Pengunjung');
         $books    = $this->getBooks();
 
         return view('pengelolaan', compact('books', 'username'));
     }
 
-    public function logout()
-    {
-        session()->forget('username');
-        return redirect('/');
-    }
 
-    public function showProfile()
+    public function showProfile(Request $request)
     {
-        $username = session('username', 'Pengunjung');
+        $username = $request->query('username', 'Pengunjung');
 
         $profile = [
             'username'      => $username,

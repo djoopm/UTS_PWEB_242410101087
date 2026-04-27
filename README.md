@@ -1,20 +1,28 @@
 ## Pengelolaan Buku Perpustakaan
 ### Layout Web :
 <h2>Login</h2>
-<img src="assets/login_desktop.png" alt="Login">
-<img src="assets/login_mobile.png" alt="Login">
+<div style="display: flex; gap: 20px;">
+  <img src="assets/login_desktop.png" width="45%" alt="Login Desktop">
+  <img src="assets/login_mobile.png" width="20%" alt="Login Mobile">
+</div>
 
 <h2>Dashboard</h2>
-<img src="assets/dashboard_desktop.png" alt="Dashboard">
-<img src="assets/dashboard_mobile.png" alt="Dashboard">
+<div style="display: flex; gap: 20px;">
+  <img src="assets/dashboard_desktop.png" width="45%" alt="Dashboard Desktop">
+  <img src="assets/dashboard_mobile.png" width="20%" alt="Dashboard Mobile">
+</div>
 
 <h2>Profil</h2>
-<img src="assets/profile_desktop.png" alt="Profil">
-<img src="assets/profile_mobile.png" alt="Profil">
+<div style="display: flex; gap: 20px;">
+  <img src="assets/profile_desktop.png" width="45%" alt="Profil Desktop">
+  <img src="assets/profile_mobile.png" width="20%" alt="Profil Mobile">
+</div>
 
 <h2>Pengelolaan</h2>
-<img src="assets/pengelolaan_desktop.png" alt="Pengelolaan">
-<img src="assets/pengelolaan_mobile.png" alt="Pengelolaan">
+<div style="display: flex; gap: 20px;">
+  <img src="assets/pengelolaan_desktop.png" width="45%" alt="Pengelolaan Desktop">
+  <img src="assets/pengelolaan_mobile.png" width="20%" alt="Pengelolaan Mobile">
+</div>
 
 ### Deskripsi :
 <p style="text-align: justify;" >
