@@ -18,7 +18,7 @@
   <img src="assets/profile_mobile.png" width="20%" alt="Profil Mobile">
 </div>
 
-<h2>Pengelolaan</h2>
+<h2>Pengelolaan (dengan Ajax)</h2>
 <div style="display: flex; gap: 20px;">
   <img src="assets/pengelolaan_desktop.png" width="45%" alt="Pengelolaan Desktop">
   <img src="assets/pengelolaan_mobile.png" width="20%" alt="Pengelolaan Mobile">
@@ -27,7 +27,7 @@
 ### Deskripsi :
 <p style="text-align: justify;" >
 
-Saya mengembangkan proyek UTS PWEB B yang berfokus pada alur penggunaan Controller dalam aplikasi web. Proses dimulai dari fitur login, di mana pengguna diminta memasukkan username. Sistem juga dilengkapi dengan validasi untuk menampilkan pesan error apabila username tidak diisi.
+Saya mengembangkan proyek UTS PWEB B yang berfokus pada alur penggunaan Controller dalam aplikasi web dengan ajax. Proses dimulai dari fitur login, di mana pengguna diminta memasukkan username. Sistem juga dilengkapi dengan validasi untuk menampilkan pesan error apabila username tidak diisi.
 
 Selanjutnya, saya membuat fitur pengelolaan peminjaman buku yang terdiri dari halaman dashboard. Pada halaman ini ditampilkan data buku serta username pengguna yang sebelumnya diinput saat proses login. untuk isinya yaitu :
 <ol>

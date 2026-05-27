@@ -263,10 +263,7 @@
 
         </form>
 
-        <a href="{{ route('login') }}" class="back-link">
-            <i class="bi bi-arrow-left"></i> Back to Home page
-        </a>
-
+    
         <div class="footer-text">
             &copy; {{ date('Y') }} by <span>UPA Perpustakaan</span>
         </div>
